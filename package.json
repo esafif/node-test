@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/esafif/node-test#readme",
   "devDependencies": {
+    "expect": "^1.20.2",
     "mocha": "^3.0.0"
   }
 }
