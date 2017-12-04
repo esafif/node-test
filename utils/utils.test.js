@@ -44,3 +44,17 @@ it("should verify first and last name", () =>{
         lastName: 'efendi'
     });
 });
+
+it("should async add two number",  (done) =>{
+    utils.asyncAdd(4, 3, (sum) =>{
+        expect(sum).toBe(7).toBeA('number');
+        done();
+    });
+});
+
+it("should async square x",  (done) =>{
+    utils.asyncSquare(5, (res) =>{
+        expect(res).toBe(25).toBeA('number');
+        done();
+    });
+});
